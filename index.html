@@ -79,7 +79,7 @@
             <div class="spotify-Playlists">
                 <h1>Spotify Playlist</h1>
                 <div class="cardContainer">
-                    <div class="card">
+                    <div data-folder="cs" class="card">
                         <img src="playlist-img.jpg" alt="Playlist Cover">
                         <svg class="playbutton" width="40" height="40" viewBox="0 0 100 100"
                             xmlns="http://www.w3.org/2000/svg">
@@ -90,8 +90,13 @@
                         <p>Hits to boost your mood and fill you with happiness!</p>
                     </div>
 
-                    <div class="card ">
-                        <img src="playlist-img.jpg" alt="">
+                    <div data-folder="ncs" class="card">
+                        <img src="playlist-img.jpg" alt="Playlist Cover">
+                        <svg class="playbutton" width="40" height="40" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#00cc00" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
                         <h2>Happy Hits!</h2>
                         <p>Hits to boost your mood and fill you with happiness!</p>
                     </div>
@@ -108,7 +113,17 @@
                             <img width="30" id="play" src="playbtn.svg" alt="play button">
                             <img width="30" id="next" src="forwardbtn.svg" alt="forward button">
                         </div>
-                        <div class="songtime"></div>
+                        <div class="timevol">
+
+
+                            <div class="songtime">
+
+                            </div>
+                            <div class="volume">
+                                <img width="25"  src="volume.svg" alt="">
+                                <input type="range"  name="volume" id="" class="range">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
