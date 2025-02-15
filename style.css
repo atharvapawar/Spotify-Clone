@@ -240,7 +240,7 @@ body {
     width: 344px;
 }
 
-.info div{
+.info ul div{
     word-break: break-all;
 }
 
@@ -385,11 +385,6 @@ body {
 
     .card{
         width: 90vw;
-    }
-
-    .signupbtn {
-        margin-right: -10px;
-        margin-bottom: 10px;
     }
 
     .abovebar{
