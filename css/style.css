@@ -4,6 +4,7 @@
     --a:0;
 }
 
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -88,13 +89,16 @@ body {
     margin: 16px 0;
 }
 
-.header {
+.left-header {
     display: flex;
-    justify-content: space-between;
+    gap: 11px;
+    padding: 20px;
 }
 
-.header>* {
-    padding: 20px;
+.right-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
 }
 
 .logo {
@@ -108,20 +112,13 @@ body {
     height: 35px;
 }
 
-.spotify-Playlists {
-    padding: 15px
-}
-.spotify-Playlists h1{
-    padding: 15px
-}
-
 .cardContainer {
     margin: 30px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     overflow-y: auto;
-    max-height: 80vh;
+    max-height: 65vh;
 }
 
 .card {
@@ -161,6 +158,14 @@ body {
     margin: 0 12px;
 }
 
+.arrow{
+    cursor: pointer;
+}
+
+.arrow:hover{
+    scale: 115%;
+}
+
 .signupbtn {
     background-color: #121212;
     color: rgb(155, 148, 148);
@@ -187,6 +192,12 @@ body {
 
 .loginbtn:hover {
     scale: 110%;
+}
+
+.spotify-Playlists h1{
+    padding: 20px;
+    padding-left: 31px;
+    font-size: 2rem;
 }
 
 .playbar {
@@ -258,8 +269,10 @@ body {
 }
 
 .seekbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 2px;
-    max-width: 96.5%;
     width: calc(100% - 30px);
     background-color: white;
     border-radius: 10px;
@@ -279,6 +292,7 @@ body {
     position: absolute;
     top: -6px;
     left: 0%;
+    margin-left: -8px;
     transition: left 0.5s;
 }
 
@@ -325,6 +339,10 @@ body {
     width: 35px;
 }
 
+.hamburger:hover {
+    scale: 110%;
+}
+
 .hamburgerCont {
     display: flex;
     justify-content: center;
@@ -339,10 +357,11 @@ body {
 @media (max-width: 1440px) {
     .left {
         position: absolute;
-        left: -120%;
+        left: -130%;
         transition: all .3s;
         z-index: 1;
-        width: 375px;
+        width: 335px;
+        
         background-color: black;
     }
 
@@ -351,9 +370,17 @@ body {
         width: 100vw;
     }
 
+    .signupbtn, .loginbtn{
+        margin: auto;
+        padding: 8px;
+    }  
+
+    .playlist-logo {
+        width: 8vw;
+    }
+
     .playbar {
-        right: 10.5%;
-        width: calc(100% - 20vw);
+        right: 10%;
     }
 
     .songbuttons{
@@ -370,6 +397,8 @@ body {
         display: block;
     }
 
+
+
     .closebtn {
         display: block;
         position: absolute;
@@ -381,10 +410,13 @@ body {
     .cardContainer{
         justify-content: center;
         margin: 10px;
+        margin-bottom: 35vh;
+        max-height: auto;
+        overflow-y: unset;
     }
 
     .card{
-        width: 90vw;
+        width: 100%;
     }
 
     .abovebar{
